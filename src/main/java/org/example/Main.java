@@ -60,11 +60,13 @@ public class Main {
          * (dateOfBirth.withYear(now.getYear())). Das bedeutet, wir betrachten den Geburtstag
          * des Tieres in diesem Jahr.
          *
+         * 4.
          * Überprüfen, ob der Geburtstag dieses Jahr schon war:
          * Hier wird geprüft, ob der Geburtstag des Tieres in diesem Jahr bereits vorbei ist.
          * Das macht der Code mit isBefore(now). Wenn ja, bedeutet das, dass der nächste Geburtstag im nächsten Jahr ist.
          * Berechnung der Tage bis zum nächsten Geburtstag:
          *
+         * 5.
          * Wenn der Geburtstag dieses Jahr schon vorbei ist:
          * Der Code setzt das Geburtsdatum auf das nächste Jahr (dateOfBirth.withYear(now.getYear() + 1))
          * und berechnet dann, wie viele Tage es von heute bis zu diesem Datum im nächsten Jahr sind.
@@ -72,6 +74,7 @@ public class Main {
          * Der Code berechnet, wie viele Tage es von heute bis zum Geburtstag in diesem Jahr sind.
          * Ergebnis in daysUntilNextBirthday speichern:
          *
+         * 6.
          * Die berechnete Anzahl der Tage wird in der Variable daysUntilNextBirthday gespeichert.
          */
 
