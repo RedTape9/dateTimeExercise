@@ -25,16 +25,23 @@ public class Main {
 
 
         Animal animal = new Animal("Burek", LocalDate.of(2010, 1, 1));
+        Animal animal2 = new Animal("Astrid", LocalDate.of(2015, 12, 1));
         System.out.println(animal.getName());
         System.out.println(animal.getDateOfBirth());
         LocalDate dateOfBirth = animal.getDateOfBirth();
+        LocalDate dateOfBirth2 = animal2.getDateOfBirth();
         LocalDate now = LocalDate.now();
         // next Birthday in days
         long daysUntilNextBirthday = (dateOfBirth.withYear(now.getYear()).isBefore(now) ?
                 now.until(dateOfBirth.withYear(now.getYear() + 1), ChronoUnit.DAYS) :
                 now.until(dateOfBirth.withYear(now.getYear()), ChronoUnit.DAYS));
 
+        long daysUntilNextBirthday2 = (dateOfBirth2.withYear(now.getYear()).isBefore(now) ?
+                now.until(dateOfBirth2.withYear(now.getYear() + 1), ChronoUnit.DAYS) :
+                now.until(dateOfBirth2.withYear(now.getYear()), ChronoUnit.DAYS));
+
         System.out.println(daysUntilNextBirthday);
+        System.out.println(daysUntilNextBirthday2);
 
 
         /**
